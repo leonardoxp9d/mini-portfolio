@@ -1,5 +1,6 @@
 body {
-    background-image: url("../imagens/fundo-site.jpg");
+    background-image: url("../imagens/fundo-site.gif");
+    background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -11,30 +12,64 @@ body {
     justify-content: center;
     align-items: center; 
     min-height: 100vh;
-    padding: 30px;
+    padding: 30px;    
+}
+
+.borda {
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borda::before, .borda::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, 
+    #CD16FF, #0B64E0, #F700FF, #00FFFF, #9400FF, #0B13DE, #F700FF, #9400FF, #0B64E0, #F700FF, #00FFFF);
+    background-size: 300%;
+    animation: animarBorda 8s linear  infinite;
+}
+
+.borda::after {
+    filter: blur(50px);
 }
 
 .cartao {
-    background-color: #070d12;
-    width: 370px;
-    border: 2px solid #e126d9;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    overflow: hidden;
+    background-color: rgba(7, 13, 18, 0.55);
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
 }
 
 .cartao .minhas-informacoes {
-    padding-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    text-align: center;
     gap: 10px;
 }
 
 .cartao .minhas-informacoes img {
-    width: 104px;
-    height: 104px;
-    border-radius: 50px;
-    border: 4px solid #02d08f;
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+    border: 3px solid rgba(32,252,254, 1);
+    transition: border .35s ease-in-out, transform .35s;
+}
+
+.cartao .minhas-informacoes img:hover {
+    border:  10px double rgba(32,252,254, 1);
+    transform: scale(1.15);
 }
 
 .cartao .minhas-informacoes .nome {
@@ -43,11 +78,11 @@ body {
 
 .cartao .minhas-informacoes .cargo {
     font-size: 20px;
-    color: #b8bbc5;    
+    color: #b8bbc5;   
 }
 
 .cartao .conteudo {
-    margin-top: 15px;
+    width: 550px;
 }
 
 .cartao .abas {
@@ -60,23 +95,36 @@ body {
     justify-content: center;
     padding: 10px 0;
     cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    background-color: rgb(61, 74, 88, 0.4);
+}
+
+.cartao .abas .aba:hover {
+    background-color: rgb(61, 74, 88, 0.7);
+}
+
+.cartao .abas .aba.selecionado {
+    background-color: rgba(38, 38, 38, 0.57);
+}
+
+.cartao .abas .aba.sobre {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.cartao .abas .aba.redes {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .cartao .abas img {
     width: 30px;
 }
 
-.cartao .abas .aba.selecionado {
-    background-color: #262626;
-}
-
 .cartao .informacoes-abas {
     background-color: #262626;
-}
-
-.cartao .abas .aba:hover {
-    background-color: #414141;
+    background-color: rgba(38, 38, 38, 0.57);
+    border-bottom-right-radius: 10px;
 }
 
 .informacoes-abas .informacao {
@@ -103,7 +151,16 @@ body {
 }
 
 .informacoes-abas .descricao span {
-    color: #02d08f
+    color: rgb(32,255,255);
+    transition: color .3s ease-in-out;
+}
+
+.informacoes-abas .descricao span:hover {
+    color: rgb(250,34,200);
+}
+
+.informacoes-abas .descricao .emoji{
+    width: 25px;
 }
 
 .redes-sociais {
@@ -117,16 +174,22 @@ body {
 
 .redes-sociais li a {
     width: 250px;
-    display: block;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     color: #f3f3f3;
-    text-align: center;
     padding: 10px;
     font-size: 20px;
+    border-radius: 7px;
     transition: opacity 0.3s ease-in-out;
 }
 
 .redes-sociais li a:hover {
-    opacity: 0.8;
+    opacity: 0.6;
+}
+
+.redes-sociais .icone {
+    margin-right: 7px;
 }
 
 .redes-sociais .curriculo {
@@ -141,5 +204,13 @@ body {
     background-color: #545454;
 }
 
+/* animação */
 
-
+@keyframes animarBorda{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 300%;
+    }
+}

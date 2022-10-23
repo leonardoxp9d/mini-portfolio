@@ -1,0 +1,61 @@
+@media (max-width: 749px) {
+    .cartao {
+        width: 370px;
+        display: block;
+    }
+    
+    .cartao .conteudo {
+        width: 370px;
+        margin-top: 20px;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .cartao .minhas-informacoes {
+        margin-top: 20px;        
+    }
+
+    .cartao .informacoes-abas {
+        border-bottom-left-radius: 10px;
+    }
+}
+
+@media (max-width: 395px) {
+    .cartao {
+        width: 350px;
+    }
+
+    .cartao .conteudo {
+        width: 350px;
+
+    }
+}
+
+@media (max-width: 370px) {
+    .cartao {
+        width: 330px;
+    }
+
+    .cartao .conteudo {
+        width: 330px;
+    }
+}
+
+@media (max-width: 350px) {
+    .cartao {
+        width: 320px;
+    }
+
+    .cartao .conteudo {
+        width: 320px;
+    }
+}
+
+@media (max-width: 320px) {
+    .cartao {
+        width: 300px;
+    }
+
+    .cartao .conteudo {
+        width: 300px;
+    }
+}
