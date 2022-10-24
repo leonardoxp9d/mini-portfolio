@@ -150,6 +150,10 @@ body {
     padding-right: 15px;
 }
 
+.informacoes-abas .descricao p {
+    margin-bottom: 10px;
+}
+
 .informacoes-abas .descricao span {
     color: rgb(32,255,255);
     transition: color .3s ease-in-out;
