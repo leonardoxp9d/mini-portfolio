@@ -1,4 +1,4 @@
-# <img width="30px" src="https://user-images.githubusercontent.com/54649877/197574364-46e4736c-b744-4dbc-b83c-9e07b393d94b.png" > Mini Portfólio
+# <img width="30px" src="./src/imagens/avatar.png" > Mini Portfólio
 O projeto consiste em um mini portfólio, que contém uma aba <b><i>sobre</i></b> que onde tem informações sobre dono do portfólio em si,
 e outra aba <b><i>redes</i></b> onde tem as redes sociais do mesmo.
 <br/>
