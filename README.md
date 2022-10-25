@@ -9,7 +9,7 @@ Gostei muito do projeto e resolvi brincar um pouco adicionando pequenas alteraç
 
 - Efeito glassmorphism(vidro embaçado), feito através da propriedade backdrop-filter.
 - Borda com iluminação, feito através dos pseudo-elementos before e after,
-e as propriedades linear-gradient, filter e animation.
+e das propriedades linear-gradient, filter e animation.
 - Responsividade, como optei por deixar o portfólio deitado, tive que usar responsividade 
 para deixar ele em pé de novo, fazendo com que ele fique mais adequado em dispositivos menores.
 
