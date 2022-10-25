@@ -7,7 +7,7 @@ Projeto foi desenvolvido durante o evento MadaDev Week.
 # <img width="30px" src="https://user-images.githubusercontent.com/54649877/197573391-fb67a544-0fa6-4174-9d11-26eeb109f62f.png"> Diferencial
 Gostei muito do projeto e resolvi brincar um pouco adicionando pequenas alterações:
 
-- Efeito glassmorphism(vidro embaçado), feito atráves da propriedade backdrop-filter.
+- Efeito glassmorphism(vidro embaçado), feito através da propriedade backdrop-filter.
 - Borda com iluminação, feito através dos pseudo-elementos before e after,
 e as propriedades linear-gradient, filter e animation.
 - Responsividade, como optei por deixar o portfólio deitado, tive que usar responsividade 
